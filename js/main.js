@@ -24,15 +24,3 @@
     });
     
 }());
-
-(function () {
-    var $links = $('header').find('span');
-    
-    function resize() {
-        var w = ($(this).data('size'));
-        
-        $('.content').width(w);
-    }
-    
-    $links.on('click', resize);
-}());
