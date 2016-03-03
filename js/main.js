@@ -19,9 +19,9 @@
     
     $links.on('click', resize);
     
-    $(window).on('resize', function(e) {
+    $(window).on('load', function(e) {
         $('.col').each(size);
-    }).trigger('resize');
+    });
     
 }());
 
